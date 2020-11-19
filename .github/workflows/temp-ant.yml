@@ -1,0 +1,9 @@
+name: Freestyles/Temp-Ant
+on:
+  workflow_dispatch: 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: run ant
+      run: ant -Da=1 '-Db="t w o"' -buildfile "Sample" a b c
